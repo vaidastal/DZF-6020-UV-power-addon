@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "-local")(type "KiCad")(uri "${KIPRJMOD}/lib/symbol/local.kicad_sym")(options "")(descr ""))
+  (lib (name "-ameralab")(type "KiCad")(uri "${KIPRJMOD}/lib/symbol/logo_ameralab.kicad_sym")(options "")(descr ""))
+)
