@@ -64,11 +64,6 @@
   (pad "2" thru_hole circle (at 5 2.032) (size 0.7 0.7) (drill 0.5) (layers *.Cu *.Mask) (tstamp c333fe9f-fa87-466d-8340-0f2f036fe537))
   (pad "2" thru_hole circle (at 6.778 1.016) (size 0.7 0.7) (drill 0.5) (layers *.Cu *.Mask) (tstamp dfbc6806-a878-412c-a419-b4104fe98528))
   (pad "2" thru_hole circle (at 3.984 -1.778) (size 0.7 0.7) (drill 0.5) (layers *.Cu *.Mask) (tstamp e7a89e6d-2189-46ff-9b5c-0e63d5d98aee))
-  (model "${KICAD6_3DMODEL_DIR}/Connector_AMASS.3dshapes/AMASS_XT30U-F_1x02_P5.0mm_Vertical.wrl"
-    (offset (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
   (model "${KIPRJMOD}/lib/model/XT30.stp"
     (offset (xyz 7.5 -2.5 20))
     (scale (xyz 1 1 1))

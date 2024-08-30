@@ -40,11 +40,6 @@
   (pad "3" thru_hole circle (at -8.016 1.75) (size 0.7 0.7) (drill 0.5) (layers *.Cu *.Mask) (tstamp 35520a52-0a16-4a6f-9f1d-292c2d0ccebe))
   (pad "3" thru_hole circle (at -8 -1.75) (size 0.7 0.7) (drill 0.5) (layers *.Cu *.Mask) (tstamp bb450d42-c6ad-4505-be83-36d8a228f671))
   (pad "3" thru_hole circle (at -5.984 1.75) (size 0.7 0.7) (drill 0.5) (layers *.Cu *.Mask) (tstamp bfa8dc8c-f1c0-4dc3-8edd-fe27de7a5081))
-  (model "${KICAD6_3DMODEL_DIR}/Connector_AMASS.3dshapes/AMASS_MR30PW-FB_1x03_P3.50mm_Horizontal.wrl"
-    (offset (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
   (model "${KIPRJMOD}/lib/model/MR30-F.step"
     (offset (xyz -3.5 0 11))
     (scale (xyz 1 1 1))
