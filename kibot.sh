@@ -24,13 +24,13 @@ fi
 
 
 # generate documentation stuff
-run_kibot --out-dir ../gen/ --board pwr.kicad_pcb  print_sch pcb_print pcb_img_3d_main full_bom
-#run_kibot --out-dir ../gen/ --board bot.kicad_pcb            pcb_print pcb_img_3d_main
+run_kibot --out-dir ../gen/ --board pwr.kicad_pcb  print_sch pcb_print img_3d_pwr_front img_3d_pwr_back
+run_kibot --out-dir ../gen/ --board  ui.kicad_pcb  print_sch pcb_print img_3d_ui_front  img_3d_ui_back
 
 
 # generate single board fab stuff
-run_kibot --skip-pre all --board pwr.kicad_pcb --out-dir ../gen/pwr_single ibom fab_gerbers fab_drill fab_netlist fab_position
-#run_kibot --skip-pre all --board bot.kicad_pcb --out-dir ../gen/bot_single      fab_gerbers fab_drill fab_netlist
+run_kibot --skip-pre all --board pwr.kicad_pcb --out-dir ../gen/pwr_single ibom fab_gerbers fab_drill fab_netlist fab_position full_bom lcsc_bom
+run_kibot --skip-pre all --board  ui.kicad_pcb --out-dir ../gen/ui_single  ibom fab_gerbers fab_drill fab_netlist fab_position full_bom lcsc_bom
 
 
 # concat pcb pdfs
@@ -38,8 +38,8 @@ run_kibot --skip-pre all --out-dir ../gen/ merge_pcb_pdf
 rm ./gen/pcb_*.pdf
 
 # remove garbage changes from pdfs
-sed -i '/[/]CreationDate.*$/d' ./gen/schematics.pdf
-sed -i '/[/]CreationDate.*$/d' ./gen/pcb.pdf
+sed -i '/[/]CreationDate.*$/d' ./gen/schematics*.pdf
+sed -i '/[/]CreationDate.*$/d' ./gen/pcb*.pdf
 
 
 # make gerber generation reproducible for git
@@ -63,7 +63,7 @@ function archive() {
 	zip -qjorX9 -n zip $1 $dir
 }
 archive ./gen/pwr_single/_prod_pwr.zip
-#archive ./gen/bot_single/_prod_bot.zip
+archive ./gen/ui_single/_prod_ui.zip
 
 
 

@@ -1,0 +1,103 @@
+09-10 10:10:15 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 359:Plugin executed on: 'linux'
+09-10 10:10:15 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 360:Plugin executed with python version: '3.9.2 (default, Feb 28 2021, 17:03:44) \n[GCC 10.2.1 20210110]'
+09-10 10:10:15 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 361:KiCad build version: 6.0.11+dfsg-1~bpo11+1
+09-10 10:10:15 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 362:Plugin version: 1.3.5
+09-10 10:10:15 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 363:Frame repr: <wx._core.Frame object at 0x7f6cb01929d0>
+09-10 10:10:15 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 387:Preparing replicator with U201 as a reference
+09-10 10:10:15 com_github_MitjaNemec_ReplicateLayout.replicate_layout 113:getting a list of all footprints on board
+09-10 10:10:15 com_github_MitjaNemec_ReplicateLayout.replicate_layout 132:Footprint kibuzzard-66DFD37B does not have Sheetfile property, it will not be replicated. Most likely it is only in layout
+09-10 10:10:15 com_github_MitjaNemec_ReplicateLayout.replicate_layout 132:Footprint kibuzzard-66DED8D5 does not have Sheetfile property, it will not be replicated. Most likely it is only in layout
+09-10 10:10:15 com_github_MitjaNemec_ReplicateLayout.replicate_layout 132:Footprint kibuzzard-66DF7589 does not have Sheetfile property, it will not be replicated. Most likely it is only in layout
+09-10 10:10:15 com_github_MitjaNemec_ReplicateLayout.replicate_layout 132:Footprint kibuzzard-66DF7601 does not have Sheetfile property, it will not be replicated. Most likely it is only in layout
+09-10 10:10:15 com_github_MitjaNemec_ReplicateLayout.replicate_layout 132:Footprint kibuzzard-66DF760D does not have Sheetfile property, it will not be replicated. Most likely it is only in layout
+09-10 10:10:15 com_github_MitjaNemec_ReplicateLayout.replicate_layout 132:Footprint kibuzzard-66DF7618 does not have Sheetfile property, it will not be replicated. Most likely it is only in layout
+09-10 10:10:15 com_github_MitjaNemec_ReplicateLayout.replicate_layout 132:Footprint kibuzzard-66DF7626 does not have Sheetfile property, it will not be replicated. Most likely it is only in layout
+09-10 10:10:15 com_github_MitjaNemec_ReplicateLayout.replicate_layout 132:Footprint kibuzzard-66DF75FA does not have Sheetfile property, it will not be replicated. Most likely it is only in layout
+09-10 10:10:15 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 435:source anchor footprint is 'U201'
+Located on: ['7seg 1-2']
+With filenames: ['ui_7seg.kicad_sch']
+With sheet_id:['7seg 1-2']
+09-10 10:10:15 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 442:Corresponding footprints are 
+[('U401', ['7seg 5-6']), ('U201', ['7seg 1-2']), ('U301', ['7seg 3-4'])]
+09-10 10:10:15 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 454:Showing dialog
+09-10 10:10:15 com_github_MitjaNemec_ReplicateLayout.replicate_layout 391:constructing a list of sheets suitable for replication on level:'7seg 1-2', file:'ui_7seg.kicad_sch'
+09-10 10:10:15 com_github_MitjaNemec_ReplicateLayout.replicate_layout 428:suitable sheets are:[['7seg 3-4'], ['7seg 5-6']]
+09-10 10:10:15 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1356:Level selected: ['7seg 1-2']
+09-10 10:10:15 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1191:Filtering list of tracks
+09-10 10:10:15 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 460:Toolbar position: wx.Point(3086, 85)
+09-10 10:10:15 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 465:Dialog position: wx.Point(2722, 85)
+09-10 10:10:19 com_github_MitjaNemec_ReplicateLayout.replicate_layout 391:constructing a list of sheets suitable for replication on level:'7seg 1-2', file:'ui_7seg.kicad_sch'
+09-10 10:10:19 com_github_MitjaNemec_ReplicateLayout.replicate_layout 428:suitable sheets are:[['7seg 3-4'], ['7seg 5-6']]
+09-10 10:10:19 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 207:Replicating layout
+09-10 10:10:19 com_github_MitjaNemec_ReplicateLayout.replicate_layout 237:Starting replication of sheets: [['7seg 3-4'], ['7seg 5-6']]
+on level: ['7seg 1-2']
+with tracks=True, zone=True, text=True, text=True, intersecting=False, remove=True, locked footprints=False, group_only=False
+09-10 10:10:19 root 299:updating GUI message: 'Preparing for replication'
+09-10 10:10:21 root 304:updating GUI with: 0
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 307:Getting the list of source footprints
+09-10 10:10:21 root 304:updating GUI with: 0
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 317:Getting the list of all the remaining footprints
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 324:Getting source tracks
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1191:Filtering list of tracks
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 328:Getting source zones
+09-10 10:10:21 root 304:updating GUI with: 50
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 332:Getting source text items
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 336:Getting source drawing items
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 269:Removing tracks and zones, before footprint placement
+09-10 10:10:21 root 299:updating GUI message: 'Removing zones and tracks'
+09-10 10:10:21 root 304:updating GUI with: 0
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1137:Remove bounding box top:74735000, bottom:167232500, Left:182375000, Right:234225000
+09-10 10:10:21 root 304:updating GUI with: 50
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1137:Remove bounding box top:66025000, bottom:247232500, Left:182375000, Right:234225000
+09-10 10:10:21 root 299:updating GUI message: 'Replicating footprints'
+09-10 10:10:21 root 304:updating GUI with: 0
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 742:Replicating footprints
+09-10 10:10:21 root 304:updating GUI with: 0
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 748:Replicating footprints on sheet ['7seg 3-4']
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 748:Replicating footprints on sheet ['7seg 5-6']
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 277:Removing tracks and zones, after footprint placement
+09-10 10:10:21 root 299:updating GUI message: 'Removing zones and tracks'
+09-10 10:10:21 root 304:updating GUI with: 0
+09-10 10:10:21 root 304:updating GUI with: 0
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1137:Remove bounding box top:112767500, bottom:167232500, Left:182375000, Right:212625000
+09-10 10:10:21 root 304:updating GUI with: 50
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1137:Remove bounding box top:192767500, bottom:247232500, Left:182375000, Right:212625000
+09-10 10:10:21 root 299:updating GUI message: 'Replicating tracks'
+09-10 10:10:21 root 304:updating GUI with: 0
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 907:Replicating tracks
+09-10 10:10:21 root 304:updating GUI with: 0
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 913:Replicating tracks on sheet ['7seg 3-4']
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 721:Cannot pair src net: ['DIN'] and dst net: ['', '7seg 1-2', 'DOUT'], with src_net_depth=1, dst_net_depth=3, src_fp_depth=1, dst_fp_depth=1
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 737:Net pairs for sheet ['7seg 3-4'] :[('/7seg 1-2/CC3', '/7seg 3-4/CC3'), ('/7seg 1-2/S4', '/7seg 3-4/S4'), ('/7seg 1-2/S5', '/7seg 3-4/S5'), ('/7seg 1-2/CC8', '/7seg 3-4/CC8'), ('/7seg 1-2/S6', '/7seg 3-4/S6'), ('/7seg 1-2/CC1', '/7seg 3-4/CC1'), ('/7seg 1-2/CC2', '/7seg 3-4/CC2'), ('/7seg 1-2/S3', '/7seg 3-4/S3'), ('/7seg 1-2/DOUT', '/7seg 3-4/DOUT'), ('5V', '5V'), ('/7seg 1-2/S8', '/7seg 3-4/S8'), ('/7seg 1-2/S1', '/7seg 3-4/S1'), ('/7seg 1-2/S7', '/7seg 3-4/S7'), ('CLK', 'CLK'), ('/7seg 1-2/CC4', '/7seg 3-4/CC4'), ('GND', 'GND'), ('Net-(U201-Pad1)', 'Net-(U301-Pad1)'), ('Net-(C201-Pad1)', 'Net-(C301-Pad1)'), ('/7seg 1-2/CC5', '/7seg 3-4/CC5'), ('Net-(R203-Pad1)', 'Net-(R303-Pad1)'), ('/7seg 1-2/CC6', '/7seg 3-4/CC6'), ('CS', 'CS'), ('/7seg 1-2/CC7', '/7seg 3-4/CC7'), ('/7seg 1-2/S2', '/7seg 3-4/S2')]
+09-10 10:10:21 root 304:updating GUI with: 32
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 913:Replicating tracks on sheet ['7seg 5-6']
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 721:Cannot pair src net: ['DIN'] and dst net: ['', '7seg 3-4', 'DOUT'], with src_net_depth=1, dst_net_depth=3, src_fp_depth=1, dst_fp_depth=1
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 737:Net pairs for sheet ['7seg 5-6'] :[('Net-(U201-Pad1)', 'Net-(U401-Pad1)'), ('/7seg 1-2/CC7', '/7seg 5-6/CC7'), ('/7seg 1-2/S8', '/7seg 5-6/S8'), ('/7seg 1-2/S4', '/7seg 5-6/S4'), ('/7seg 1-2/S1', '/7seg 5-6/S1'), ('5V', '5V'), ('/7seg 1-2/CC8', '/7seg 5-6/CC8'), ('/7seg 1-2/S7', '/7seg 5-6/S7'), ('/7seg 1-2/CC2', '/7seg 5-6/CC2'), ('/7seg 1-2/S5', '/7seg 5-6/S5'), ('/7seg 1-2/S6', '/7seg 5-6/S6'), ('/7seg 1-2/S2', '/7seg 5-6/S2'), ('/7seg 1-2/CC5', '/7seg 5-6/CC5'), ('CLK', 'CLK'), ('/7seg 1-2/DOUT', '/7seg 5-6/DOUT'), ('/7seg 1-2/S3', '/7seg 5-6/S3'), ('/7seg 1-2/CC3', '/7seg 5-6/CC3'), ('Net-(C201-Pad1)', 'Net-(C401-Pad1)'), ('GND', 'GND'), ('/7seg 1-2/CC6', '/7seg 5-6/CC6'), ('/7seg 1-2/CC1', '/7seg 5-6/CC1'), ('/7seg 1-2/CC4', '/7seg 5-6/CC4'), ('CS', 'CS'), ('Net-(R203-Pad1)', 'Net-(R403-Pad1)')]
+09-10 10:10:21 root 304:updating GUI with: 67
+09-10 10:10:21 root 299:updating GUI message: 'Replicating zones'
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 967:Replicating zones
+09-10 10:10:21 root 304:updating GUI with: 0
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 974:Replicating zones on sheet ['7seg 3-4']
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 721:Cannot pair src net: ['DIN'] and dst net: ['', '7seg 1-2', 'DOUT'], with src_net_depth=1, dst_net_depth=3, src_fp_depth=1, dst_fp_depth=1
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 737:Net pairs for sheet ['7seg 3-4'] :[('/7seg 1-2/CC3', '/7seg 3-4/CC3'), ('/7seg 1-2/S4', '/7seg 3-4/S4'), ('/7seg 1-2/S5', '/7seg 3-4/S5'), ('/7seg 1-2/CC8', '/7seg 3-4/CC8'), ('/7seg 1-2/S6', '/7seg 3-4/S6'), ('/7seg 1-2/CC1', '/7seg 3-4/CC1'), ('/7seg 1-2/CC2', '/7seg 3-4/CC2'), ('/7seg 1-2/S3', '/7seg 3-4/S3'), ('/7seg 1-2/DOUT', '/7seg 3-4/DOUT'), ('5V', '5V'), ('/7seg 1-2/S8', '/7seg 3-4/S8'), ('/7seg 1-2/S1', '/7seg 3-4/S1'), ('/7seg 1-2/S7', '/7seg 3-4/S7'), ('CLK', 'CLK'), ('/7seg 1-2/CC4', '/7seg 3-4/CC4'), ('GND', 'GND'), ('Net-(U201-Pad1)', 'Net-(U301-Pad1)'), ('Net-(C201-Pad1)', 'Net-(C301-Pad1)'), ('/7seg 1-2/CC5', '/7seg 3-4/CC5'), ('Net-(R203-Pad1)', 'Net-(R303-Pad1)'), ('/7seg 1-2/CC6', '/7seg 3-4/CC6'), ('CS', 'CS'), ('/7seg 1-2/CC7', '/7seg 3-4/CC7'), ('/7seg 1-2/S2', '/7seg 3-4/S2')]
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 974:Replicating zones on sheet ['7seg 5-6']
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 721:Cannot pair src net: ['DIN'] and dst net: ['', '7seg 3-4', 'DOUT'], with src_net_depth=1, dst_net_depth=3, src_fp_depth=1, dst_fp_depth=1
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 737:Net pairs for sheet ['7seg 5-6'] :[('Net-(U201-Pad1)', 'Net-(U401-Pad1)'), ('/7seg 1-2/CC7', '/7seg 5-6/CC7'), ('/7seg 1-2/S8', '/7seg 5-6/S8'), ('/7seg 1-2/S4', '/7seg 5-6/S4'), ('/7seg 1-2/S1', '/7seg 5-6/S1'), ('5V', '5V'), ('/7seg 1-2/CC8', '/7seg 5-6/CC8'), ('/7seg 1-2/S7', '/7seg 5-6/S7'), ('/7seg 1-2/CC2', '/7seg 5-6/CC2'), ('/7seg 1-2/S5', '/7seg 5-6/S5'), ('/7seg 1-2/S6', '/7seg 5-6/S6'), ('/7seg 1-2/S2', '/7seg 5-6/S2'), ('/7seg 1-2/CC5', '/7seg 5-6/CC5'), ('CLK', 'CLK'), ('/7seg 1-2/DOUT', '/7seg 5-6/DOUT'), ('/7seg 1-2/S3', '/7seg 5-6/S3'), ('/7seg 1-2/CC3', '/7seg 5-6/CC3'), ('Net-(C201-Pad1)', 'Net-(C401-Pad1)'), ('GND', 'GND'), ('/7seg 1-2/CC6', '/7seg 5-6/CC6'), ('/7seg 1-2/CC1', '/7seg 5-6/CC1'), ('/7seg 1-2/CC4', '/7seg 5-6/CC4'), ('CS', 'CS'), ('Net-(R203-Pad1)', 'Net-(R403-Pad1)')]
+09-10 10:10:21 root 299:updating GUI message: 'Replicating text'
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1047:Replicating text
+09-10 10:10:21 root 304:updating GUI with: 0
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1054:Replicating text on sheet ['7seg 3-4']
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1054:Replicating text on sheet ['7seg 5-6']
+09-10 10:10:21 root 299:updating GUI message: 'Replicating drawings'
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1088:Replicating drawings
+09-10 10:10:21 root 304:updating GUI with: 0
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1094:Replicating drawings on sheet ['7seg 3-4']
+09-10 10:10:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1094:Replicating drawings on sheet ['7seg 5-6']
+09-10 10:10:21 root 299:updating GUI message: 'Removing duplicates'
+09-10 10:10:22 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 223:Replication complete
+09-10 10:10:22 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 226:Letting the user know there are some issues with replicated design
+09-10 10:10:22 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 230:Looks like the design has an exotic connectivity that is not supported by the plugin
+ Make sure that you check the connectivity around:
+Footprint R302, pad 1
+Footprint R402, pad 1
+

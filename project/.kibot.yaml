@@ -24,7 +24,7 @@ outputs:
   - name: print_sch
     type: pdf_sch_print
     options:
-      output: 'schematics.pdf'
+      output: 'schematics_%f.pdf'
 
 
   - name: pcb_print
@@ -37,7 +37,7 @@ outputs:
       color_theme: '_builtin_default'
       pages:
         - sheet: 'Drawings'
-          scaling: 2
+          scaling: 1
           layers: 
           - layer: F.Mask
             color: '#111111'
@@ -53,17 +53,17 @@ outputs:
     options:
       output: 'pcb.pdf'
       outputs:
-        - source: 'pcb_pwr.pdf'
+        - source: 'pcb_ui.pdf'
         - source: 'pcb_pwr.pdf'
 
 
-  - name: pcb_img_3d_main
+  - name: img_3d_pwr_front
     type: render_3d
     options:
-      output: 'img_pcb_3d_main_%p.png'
+      output: 'img_3d_%p_front.png'
       download: true
       rotate_x: 0
-      rotate_z: 9
+      rotate_z: 0
       move_x: 0
       move_y: 0
       solder_mask: '#104020'
@@ -73,22 +73,55 @@ outputs:
       height: 700
       view: top
       zoom: 4
-  - name: pcb_img_3d_main_back
+  - name: img_3d_pwr_back
     type: render_3d
     options:
-      output: 'img_pcb_3d_main_back_%p.png'
+      output: 'img_3d_%p_back.png'
       download: true
       rotate_x: 0
-      rotate_z: 9
+      rotate_z: 0
       move_x: 0
       move_y: 0
       solder_mask: '#104020'
       orthographic: false
       ray_tracing: true
-      width: 500
-      height: 500
+      width: 700
+      height: 700
       view: bottom
       zoom: 4
+
+  - name: img_3d_ui_front
+    type: render_3d
+    options:
+      output: 'img_3d_%p_front.png'
+      download: true
+      rotate_x: 0
+      rotate_z: 0
+      move_x: 0
+      move_y: 0
+      solder_mask: '#104020'
+      orthographic: false
+      ray_tracing: true
+      width: 700
+      height: 1800
+      view: top
+      zoom: 5
+  - name: img_3d_ui_back
+    type: render_3d
+    options:
+      output: 'img_3d_%p_back.png'
+      download: true
+      rotate_x: 0
+      rotate_z: 0
+      move_x: 0
+      move_y: 0
+      solder_mask: '#104020'
+      orthographic: false
+      ray_tracing: true
+      width: 700
+      height: 1800
+      view: bottom
+      zoom: 5
 
 
   - name: ibom
@@ -101,7 +134,7 @@ outputs:
       layer_view: F
 
 
-  - name: lcsl_bom
+  - name: lcsc_bom
     type: bom
     options:
       output: 'bom_lcsc.csv'
