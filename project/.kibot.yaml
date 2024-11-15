@@ -123,6 +123,11 @@ outputs:
       view: bottom
       zoom: 5
 
+  - name: step
+    type: step
+    run_by_default: false
+    options:
+      output: '%p.step'
 
   - name: ibom
     type: ibom

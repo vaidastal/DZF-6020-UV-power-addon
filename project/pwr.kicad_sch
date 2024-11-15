@@ -6,8 +6,8 @@
 
   (title_block
     (title "DZF-6020-UV-power-addon / power board")
-    (date "2024-09-02")
-    (rev "1.0")
+    (date "2024-11-15")
+    (rev "1.2")
   )
 
   (lib_symbols
@@ -2878,7 +2878,7 @@
     (in_bom yes) (on_board yes)
     (uuid 277e44a1-d2d7-4ed6-8c13-c54b3d0a7975)
     (property "Reference" "R109" (id 0) (at 247.65 154.94 90))
-    (property "Value" "1K" (id 1) (at 247.65 157.48 90))
+    (property "Value" "4k7" (id 1) (at 247.65 157.48 90))
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (id 2) (at 247.65 159.258 90)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2971,7 +2971,7 @@
     (in_bom yes) (on_board yes)
     (uuid 54e51e51-8059-4b43-bc90-35d548de0390)
     (property "Reference" "D101" (id 0) (at 189.23 119.38 0))
-    (property "Value" "ALR" (id 1) (at 189.23 124.46 0))
+    (property "Value" "OTP" (id 1) (at 189.23 124.46 0))
     (property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" (id 2) (at 189.23 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3747,7 +3747,7 @@
       (reference "C606") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
     )
     (path "/54e51e51-8059-4b43-bc90-35d548de0390"
-      (reference "D101") (unit 1) (value "ALR") (footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
+      (reference "D101") (unit 1) (value "OTP") (footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
     )
     (path "/4281c847-78df-4c5a-b29a-a1ea1920e237"
       (reference "D102") (unit 1) (value "VCC") (footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
@@ -3879,7 +3879,7 @@
       (reference "R108") (unit 1) (value "100R") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/277e44a1-d2d7-4ed6-8c13-c54b3d0a7975"
-      (reference "R109") (unit 1) (value "1K") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+      (reference "R109") (unit 1) (value "4k7") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/6690cda8-0978-4a64-83b9-c387a414df32/87976cd2-f39a-4acd-a502-d54a7c7d11e6"
       (reference "R201") (unit 1) (value "10R") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")

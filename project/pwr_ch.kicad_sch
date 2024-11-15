@@ -6,8 +6,8 @@
 
   (title_block
     (title "DZF-6020-UV-power-addon / power board")
-    (date "2024-09-02")
-    (rev "1.0")
+    (date "2024-11-15")
+    (rev "1.2")
   )
 
   (lib_symbols

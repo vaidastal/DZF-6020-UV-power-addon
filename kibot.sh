@@ -24,8 +24,8 @@ fi
 
 
 # generate documentation stuff
-run_kibot --out-dir ../gen/ --board pwr.kicad_pcb  print_sch pcb_print img_3d_pwr_front img_3d_pwr_back
-run_kibot --out-dir ../gen/ --board  ui.kicad_pcb  print_sch pcb_print img_3d_ui_front  img_3d_ui_back
+run_kibot --out-dir ../gen/ --board pwr.kicad_pcb  print_sch pcb_print img_3d_pwr_front img_3d_pwr_back step
+run_kibot --out-dir ../gen/ --board  ui.kicad_pcb  print_sch pcb_print img_3d_ui_front  img_3d_ui_back step
 
 
 # generate single board fab stuff
