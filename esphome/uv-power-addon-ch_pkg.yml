@@ -1,0 +1,71 @@
+
+globals:
+  - {id: "_pwm${ch}", type: float, restore_value: no, initial_value: '0.0'}
+
+
+output:
+  - platform: ledc
+    id: out${ch}
+    pin: ${pwm_pin}
+    frequency: 50000Hz
+    inverted: false
+
+
+sensor:
+  - platform: pzemdc
+    address: ${pz_addr}
+    current:
+      name: "Current"
+      state_topic: ${root_topic}/pzem${ch}/current/get
+    voltage:
+      name: "Voltage"
+      state_topic: ${root_topic}/pzem${ch}/voltage/get
+    power:
+      name: "Power"
+      id: power${ch}
+      state_topic: ${root_topic}/pzem${ch}/power/get
+      filters:
+        - filter_out: nan
+        - lambda: |-
+            if (isnan(id(en${ch}).state)) {id(en${ch}).state=0.0;}
+            if (id(en${ch}).state == 0) {
+              id(_pwm${ch}) = 0.0;
+            } else {
+              id(_pwm${ch}) += (id(en${ch}).state - x)/100/2;
+            }
+            if (id(_pwm${ch})>1.0) {id(_pwm${ch})=1.0;}
+            id(out${ch}).set_level(id(_pwm${ch}));
+            return x;
+    energy:
+      name: "Energy"
+      state_topic: ${root_topic}/pzem${ch}/energy/get
+    update_interval: ${pz_int}
+
+
+  - platform: rotary_encoder
+    id: "en${ch}"
+    pin_a: ${en_pin1}
+    pin_b: ${en_pin2}
+    min_value: 0
+    max_value: 70
+    resolution: 2
+    restore_mode: ALWAYS_ZERO
+    state_topic: ${root_topic}/encoder/ch${ch}/get
+    filters:
+      - lambda: |-
+          id(_timeout) = ${display_timeout};
+          return x;
+
+
+  - platform: template
+    id: en_out${ch}
+    update_interval: 1s
+    lambda: return id(en${ch}).state;
+    state_topic: ${root_topic}/encoder/ch${ch}/get
+
+  - platform: template
+    id: pwm_out${ch}
+    update_interval: 1s
+    lambda: return id(_pwm${ch})*100;
+    state_topic: ${root_topic}/pwm/out${ch}/get
+

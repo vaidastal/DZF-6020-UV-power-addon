@@ -1,0 +1,113 @@
+#
+# [nAn ] - cant read measured power
+# [1.2 ] - last measured power (0.0-100.0)
+# [ nAn] - power not set
+# [  12] - set power (0-70)
+#
+
+substitutions:
+  device_name: "uv-power-addon"
+  root_topic: "tmp/device/${device_name}"
+  display_timeout: "5.0"
+
+packages:
+  setup: !include {file: inc/pkg_setup.yml}
+  ch1: !include {file: uv-power-addon-ch_pkg.yml, vars:{ch: "1", pz_addr: "0x0A", pz_int: "2100ms", en_pin1: GPIO36, en_pin2: GPIO39, pwm_pin: GPIO17}}
+  ch2: !include {file: uv-power-addon-ch_pkg.yml, vars:{ch: "2", pz_addr: "0x0B", pz_int: "2200ms", en_pin1: GPIO34, en_pin2: GPIO35, pwm_pin: GPIO16}}
+  ch3: !include {file: uv-power-addon-ch_pkg.yml, vars:{ch: "3", pz_addr: "0x0C", pz_int: "2300ms", en_pin1: GPIO32, en_pin2: GPIO33, pwm_pin: GPIO4}}
+  ch4: !include {file: uv-power-addon-ch_pkg.yml, vars:{ch: "4", pz_addr: "0x0D", pz_int: "2400ms", en_pin1: GPIO25, en_pin2: GPIO26, pwm_pin: GPIO2}}
+  ch5: !include {file: uv-power-addon-ch_pkg.yml, vars:{ch: "5", pz_addr: "0x0E", pz_int: "2500ms", en_pin1: GPIO27, en_pin2: GPIO14, pwm_pin: GPIO15}}
+
+
+esp32:
+  board: az-delivery-devkit-v4
+
+logger:
+  baud_rate: 0
+
+uart:
+  tx_pin: GPIO1
+  rx_pin: GPIO3
+  baud_rate: 9600
+  stop_bits: 2
+
+i2c:
+  sda: GPIO21
+  scl: GPIO22
+  scan: true
+
+spi:
+  clk_pin: GPIO18
+  mosi_pin: GPIO23
+
+
+globals:
+  - {id: _timeout, type: float, restore_value: no, initial_value: '0.0'}
+
+display:
+  - platform: max7219
+    cs_pin: GPIO5
+    num_chips: 3
+    reverse_enable: true
+    intensity: 0
+    update_interval: 200ms
+    lambda: |-
+      it.printf(0,  "%3.1f", 0.0
+        + ((isnan(id(power1).state))?0.0:id(power1).state)
+        + ((isnan(id(power2).state))?0.0:id(power2).state)
+        + ((isnan(id(power3).state))?0.0:id(power3).state)
+        + ((isnan(id(power4).state))?0.0:id(power4).state)
+        + ((isnan(id(power5).state))?0.0:id(power5).state)
+      );
+      if (id(_timeout)>0) {
+        id(_timeout) -= 0.200;
+        it.printf(4,  "%4.0f", id(en1).state);
+        it.printf(8,  "%4.0f", id(en2).state);
+        it.printf(12, "%4.0f", id(en3).state);
+        it.printf(16, "%4.0f", id(en4).state);
+        it.printf(20, "%4.0f", id(en5).state);
+      } else {
+        it.printf(4,  "%3.1f", id(power1).state);
+        it.printf(8,  "%3.1f", id(power2).state);
+        it.printf(12, "%3.1f", id(power3).state);
+        it.printf(16, "%3.1f", id(power4).state);
+        it.printf(20, "%3.1f", id(power5).state);
+      }
+
+
+status_led:
+    pin:
+      number: GPIO19
+      inverted: true
+
+sensor:
+  - platform: duty_cycle
+    pin:
+      number: GPIO13
+      inverted: true
+      mode:
+        input: true
+        pullup: true
+    id: otp
+    update_interval: 1s
+    accuracy_decimals: 0
+    unit_of_measurement: ""
+    state_topic: ${root_topic}/gpio/otp/get
+    filters:
+      - lambda: return (x>5)?1:0;
+
+  - platform: tmp102
+    id: temp1
+    address: 0x48
+    update_interval: 300ms
+    state_topic: ${root_topic}/tmp102/tmp1/get
+
+  - platform: tmp102
+    id: temp2
+    address: 0x49
+    update_interval: 300ms
+    state_topic: ${root_topic}/tmp102/tmp2/get
+
+
+
+
